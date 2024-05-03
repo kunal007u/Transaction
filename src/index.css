@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --header-text-color: #1b254b;
+  --header-border-color: #1b254b;
+  --profile-bg-color: white;
+  --profile-shadow-color: rgba(112, 144, 176, 0.18);
+  --main-color: #;
+}
+
+input:disabled, select:disabled, textarea:disabled {
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+
+.dashboard-table::-webkit-scrollbar{
+    width: 10px;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+
+}
+
+
+.white-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.white-box-without-padding{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+}
+.text-center {
+  text-align: center !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.dialog-form .MuiPaper-root {
+  min-width: 500px;
+}
+
+.dehypnosis-dialog-form .MuiPaper-root {
+  min-width: 80%;
+}
+
+.change-pass-dialog-form .MuiPaper-root {
+  min-width: 450px;
+}
+
+.input-field {
+  padding: 11px !important;
+  border-radius: 10px !important;
+
+}
+
+.input-field input {
+  padding: 0px;
+}
+
+.input-field button {
+  margin-right: 0px;
+}
+
+.input-field::after,
+.input-field::before {
+  content: none !important;
+}
+
+.select-field {
+  border-radius: 10px !important;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.select-field fieldset {
+  border: none !important;
+}
+
+.select-field>div {
+  padding: 12px !important;
+  border-radius: 10px !important;
+}
+
+.MuiSelect-select {
+  padding: 0px !important;
+}
+
+.MuiSelect-select.MuiTablePagination-select {
+  padding-right: 24px !important;
+}
+
+.MuiChip-root {
+  background-color: #028165 !important;
+}
+
+.plus-icon {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.setting-icon {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Highlighter {
+  background-color: #0281657a;
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+
+.formik-input-error {
+  color: red;
+  font-size: 12px;
+  margin: 5px 0 0 0 !important;
+}
+
+
+.card {
+  background-color: white;
+  padding: 10px 20px 11px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #afafaf;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+}
+.pay-button{
+  padding: 0.7rem 2rem;
+  width: 100%;
+  margin: 1rem 0;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  background-color: #556cd6;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 500ms;
+  cursor: pointer;
+}
+.pay-button:disabled{
+  background-color: #afafaf;
+  box-shadow: none;
+  cursor: default;
+}
+.pay-button:disabled:hover{
+  box-shadow: none;
+}
+.pay-button:hover{
+  box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.2);
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  margin: 0.5em 0;
+}
+
+.content h1 {
+  font-size: 2em;
+}
+
+.content h2 {
+  font-size: 1.5em;
+}
+
+.content h3 {
+  font-size: 1.17em;
+}
+
+.content h4 {
+  font-size: 1em;
+}
+
+.content h5 {
+  font-size: 0.83em;
+}
+
+.content h6 {
+  font-size: 0.67em;
+}
+
+.content p {
+  margin: 1em 0;
+}
+
+.content ul, .content ol {
+  padding-left: 40px;
+  margin: 1em 0;
+}
+
+.content a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.dashboard-table .table-container::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+.dashboard-table .table-container::-webkit-scrollbar-thumb{
+    background-color: #888a892f;
+    border-radius: 10px;
+}
